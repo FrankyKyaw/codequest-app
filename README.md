@@ -1,4 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Learn to Code with CodeQuest
+
+### Overview
+
+**CodeQuest** is an interactive learning platform designed to help users master coding through hands-on lessons, coding challenges, and AI-powered feedback.
+
+### Features
+
+- **Interactive Coding**: Code directly in your browser.
+- **AI-Powered Feedback**: Get instant, personalized feedback on your code from an AI assistant.
+- **In-Browser Code Editor**: Write and test your code without leaving the browser, powered by Monaco-editor.
+
+### Screenshots
+
+#### Code Editor
+![Login Page](./public/screen1.png)
+
+#### Dashboard
+![Dashboard](./public/screen4.png)
+
+#### Code Assistant
+![Lesson Page](./public/screen3.png)
+
 
 ## Getting Started
 
