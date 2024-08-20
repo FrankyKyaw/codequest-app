@@ -5,10 +5,14 @@ import { createClient } from "../utils/supabase/client";
 export default function LoginPage() {
   const handleGoogleLogin = async () => {
     const supabase = createClient();
+    const redirectTo = process.env.NEXT_PUBLIC_VERCEL_URL
+    ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}/courses`
+    : `${window.location.origin}/courses`;
+
     const { data, error } = await supabase.auth.signInWithOAuth({
       provider: "google",
       options: {
-        redirectTo: `${window.location.origin}/courses`,
+        redirectTo: redirectTo,
       },
     });
 
