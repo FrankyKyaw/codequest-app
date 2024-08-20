@@ -5,7 +5,7 @@ import TopBar from "@/app/components/TopBar";
 import { getLessonsById, Lesson } from "@/app/data/LessonData";
 import React, { useEffect, useState } from "react";
 
-const page = ({ params }: { params: { lesson: string } }) => {
+const LessonPage  = ({ params }: { params: { lesson: string } }) => {
   const [lessonData, setLessonData] = useState<Lesson | null>(null);
 
   useEffect(() => {
@@ -32,4 +32,4 @@ const page = ({ params }: { params: { lesson: string } }) => {
   );
 };
 
-export default page;
+export default LessonPage;
