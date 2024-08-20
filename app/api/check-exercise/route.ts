@@ -5,16 +5,13 @@ function stripCode(code: string) {
     .split('\n')
     .filter(line => line.trim() !== '' && !line.trim().startsWith('//'))
     .join('\n')
-    .replace(/\s+/g, ' ')
-    .trim();
 }
 export async function POST(request: NextRequest) {
   try {
     const { code, exercise } = await request.json();
     const strippedCode = stripCode(code);
     const isCorrect = strippedCode === exercise.solution;
-    console.log("Stripped code:", strippedCode);
-    console.log("Solution:", exercise.solution);
+
     return NextResponse.json({ 
         message: isCorrect ? "Correct! Great job!" : "Not quite right. Try again!",
         isCorrect 

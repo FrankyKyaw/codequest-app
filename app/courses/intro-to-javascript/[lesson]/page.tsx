@@ -7,7 +7,6 @@ import React, { useEffect, useState } from "react";
 
 const page = ({ params }: { params: { lesson: string } }) => {
   const [lessonData, setLessonData] = useState<Lesson | null>(null);
-  const { lesson } = params;
 
   useEffect(() => {
     const lesson = getLessonsById(params.lesson);
@@ -21,6 +20,7 @@ const page = ({ params }: { params: { lesson: string } }) => {
   if (!lessonData) {
     return <div>Loading...</div>;
   }
+
   return (
     <div className="flex h-screen">
       <Sidebar />
