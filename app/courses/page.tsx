@@ -44,11 +44,11 @@ const Dashboard = () => {
           <h2 className="text-2xl font-semibold mb-4">Explore Courses</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="p-4 bg-white shadow-md rounded-lg">
-              <h3 className="text-xl font-semibold">Intro to Python</h3>
-              <p className="text-gray-600 mt-2">Learn the basics of Python programming.</p>
+              <h3 className="text-xl font-semibold">Intro to Javascript</h3>
+              <p className="text-gray-600 mt-2">Learn the basics of Javascript programming.</p>
               <button
                 className="mt-4 bg-blue-500 text-white px-4 py-2 rounded"
-                onClick={() => navigateToCourse('intro-to-python/lesson-1')}
+                onClick={() => navigateToCourse('intro-to-javascript/lesson-1')}
               >
                 Start Course
               </button>

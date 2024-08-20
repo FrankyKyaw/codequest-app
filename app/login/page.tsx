@@ -8,7 +8,7 @@ export default function LoginPage() {
     const { data, error } = await supabase.auth.signInWithOAuth({
       provider: "google",
       options: {
-        redirectTo: `/courses`,
+        redirectTo: `http://localhost:3000/courses`,
       },
     });
 

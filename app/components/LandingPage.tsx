@@ -31,21 +31,18 @@ const LandingPage = () => {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8 max-w-6xl mx-auto">
           <div className="text-center">
-            <img src="/icon1.png" alt="Feature 1" className="mx-auto mb-4" />
             <h3 className="text-xl font-semibold">Interactive Coding</h3>
             <p className="text-gray-600 mt-2">
               Code directly in your browser with real-time feedback.
             </p>
           </div>
           <div className="text-center">
-            <img src="/icon2.png" alt="Feature 2" className="mx-auto mb-4" />
             <h3 className="text-xl font-semibold">AI-Powered Feedback</h3>
             <p className="text-gray-600 mt-2">
               Get instant feedback on your code with AI.
             </p>
           </div>
           <div className="text-center">
-            <img src="/icon3.png" alt="Feature 3" className="mx-auto mb-4" />
             <h3 className="text-xl font-semibold">Gamified Learning</h3>
             <p className="text-gray-600 mt-2">
               Earn badges and points as you learn.
